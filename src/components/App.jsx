@@ -20,9 +20,9 @@ class App extends Component {
     return this.state.contacts.find(({ name }) => name === newName);
   };
 
-  deleteContact = oldName => {
+  deleteContact = contactId => {
     this.setState({
-      contacts: this.state.contacts.filter(({ name }) => name !== oldName),
+      contacts: this.state.contacts.filter(({ id }) => id !== contactId),
     });
   };
 
@@ -52,6 +52,7 @@ class App extends Component {
 
   render() {
     const { filter } = this.state;
+
     const visibleContacts = this.getVisibleContacts();
     return (
       <div className={styles.wrapper}>

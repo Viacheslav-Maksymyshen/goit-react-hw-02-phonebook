@@ -9,7 +9,7 @@ function ContactList({ contacts, onDeleteContact }) {
           {name} : {number}
           <button
             className={styles.btnContact}
-            onClick={() => onDeleteContact(name)}
+            onClick={() => onDeleteContact(id)}
           >
             Delete
           </button>
