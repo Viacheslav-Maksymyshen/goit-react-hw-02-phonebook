@@ -39,7 +39,7 @@
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   background: #8c7c75;
-  /* border-bottom: 4px solid #d87d56; */
+
   color: white;
   font-size: 14px;
   cursor: pointer;
@@ -48,5 +48,4 @@
 .btnForm:hover,
 .btnForm:focus {
   background: #2c2624;
-  /* border-bottom: 4px solid #c25425; */
 }
