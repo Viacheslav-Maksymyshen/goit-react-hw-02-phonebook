@@ -13,7 +13,7 @@ class App extends Component {
 
   handleNameChange = e => {
     const { name, value } = e.target;
-    this.setState({ [name]: value });
+    this.setState({ [name]: value.trim() });
   };
 
   repeatName = newName => {
