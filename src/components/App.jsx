@@ -17,7 +17,9 @@ class App extends Component {
   };
 
   repeatName = newName => {
-    return this.state.contacts.find(({ name }) => name === newName);
+    return this.state.contacts.find(
+      ({ name }) => name.toLowerCase() === newName.toLowerCase()
+    );
   };
 
   deleteContact = contactId => {
